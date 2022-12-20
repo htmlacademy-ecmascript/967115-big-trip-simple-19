@@ -1,14 +1,16 @@
 import { createElement } from '../render.js';
 
-function createNewEventButtonTemplate () {
+function createBoardTemplate () {
   return (
-    '<button class="trip-main__event-add-btn  btn  btn--big  btn--yellow" type="button">New event</button>'
+    `<section class="trip-events">
+      <h2 class="visually-hidden">Trip events</h2>
+    </section>`
   );
 }
 
-export default class NewEventButtonView {
+export default class BoardView {
   getTemplate () {
-    return createNewEventButtonTemplate();
+    return createBoardTemplate();
   }
 
   getElement () {
