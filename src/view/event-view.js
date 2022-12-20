@@ -42,7 +42,7 @@ export default class EditView {
 
   getElement () {
     if (!this.element) {
-      this.element = createElement(this.createEventTemplate());
+      this.element = createElement(this.getTemplate());
     }
 
     return this.element;
